@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>ToDo List</title>
+</head>
+<body>
+    
+
+  <div id="app-container">
+    <div id="todo-container">
+        <div class="Titlee">
+            <br>
+
+            <br>
+            <b> TO DO LIST</b>
+            <BR>
+                <br>
+                <p style="color: #000;">
+               <hr>
+                
+                </div>
+      <div class="task" id="task1">
+        <label for="task1-name">Task Name:</label>
+        <input type="text" id="task1-name" placeholder="Enter Task name">
+        <br>
+
+        <label for="task1-category">Category:</label>
+        <input type="text" id="task1-category" placeholder="Enter Category">
+
+        <label for="task1-deadline">Deadline:</label>
+        <input type="date" id="task1-deadline">
+
+        <label for="task1-priority">Priority:</label>
+        <select id="task1-priority">
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+
+        <label for="task1-label">Label:</label>
+        <input type="text" id="task1-label" placeholder="Enter label">
+
+        <button onclick="removeTask('task1')">Remove Task</button>
+        <button onclick="addTask('task1')">Add Task</button>
+        <button class="view-button" onclick="viewTask('task1')">View Task</button>
+      </div>
+
+      <div class="task" id="task2">
+        <label for="task2-name">Task Name:</label>
+        <input type="text" id="task2-name" placeholder="Enter task name">
+
+        <label for="task2-category">Category:</label>
+        <input type="text" id="task2-category" placeholder="Enter category">
+
+        <label for="task2-deadline">Deadline:</label>
+        <input type="date" id="task2-deadline">
+
+        <label for="task2-priority">Priority:</label>
+        <select id="task2-priority">
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+
+        <label for="task2-label">Label:</label>
+        <input type="text" id="task2-label" placeholder="Enter label">
+
+        <button onclick="removeTask('task2')">Remove Task</button>
+        <button onclick="addTask('task2')">Add Task</button>
+        <button class="view-button" onclick="viewTask('task2')">View Task</button>
+      </div>
+      <!-- Add more tasks as needed -->
+    </div>
+
+   
+        <div class="Abi">
+      <h2>Missed Tasks</h2>
+      <div id="missed-tasks"></div>
+    </div>
+
+  </div>
+  <script src="main.js">
+   
+  </script>
+</body>
+</html>
